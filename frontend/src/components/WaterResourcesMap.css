@@ -1,0 +1,334 @@
+
+/* Main Page */
+
+.water-resources-page {
+    width: 100%;
+    padding: 22px;
+    color: #e8f5ec;
+    animation: resourcesFadeIn 0.8s ease;
+}
+
+/* Heading */
+
+.resources-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.resources-heading h2 {
+    font-size: 25px;
+    margin: 0;
+    color: #f0fff4;
+    letter-spacing: -0.6px;
+}
+
+.resources-heading p {
+    color: #8fa797;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.map-status {
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: rgba(74, 222, 128, 0.09);
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* Main Dashboard Layout */
+
+.resources-dashboard {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(250px, 0.9fr);
+    gap: 22px;
+    align-items: start;
+}
+
+/* Map Section */
+
+.water-map-section {
+    background: linear-gradient(145deg, #101d16, #0b120e);
+    border: 1px solid rgba(74, 222, 128, 0.15);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.35s ease;
+}
+
+.water-map-section:hover {
+    border-color: rgba(74, 222, 128, 0.3);
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.07);
+}
+
+.map-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.map-section-heading h3 {
+    font-size: 16px;
+    color: #e8f5ec;
+    margin: 0;
+}
+
+.map-section-heading p {
+    color: #82998a;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.map-section-heading span {
+    color: #4ade80;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Actual Map */
+
+.water-map-container {
+    width: 100%;
+    height: 430px;
+    border-radius: 13px;
+    overflow: hidden;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    position: relative;
+}
+
+.water-leaflet-map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Coordinates */
+
+.map-coordinate-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(74, 222, 128, 0.045);
+    border-radius: 9px;
+    color: #8fa797;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    flex-wrap: wrap;
+}
+
+/* Right Panel */
+
+.resources-side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+/* Information Cards */
+
+.resource-side-card {
+    background: linear-gradient(145deg, #101d16, #0b120e);
+    border: 1px solid rgba(74, 222, 128, 0.13);
+    border-radius: 15px;
+    padding: 19px;
+    transition: all 0.3s ease;
+}
+
+.resource-side-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(74, 222, 128, 0.3);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.06);
+}
+
+.resource-side-card h3 {
+    color: #e8f5ec;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.side-card-description {
+    color: #82998a;
+    font-size: 11px;
+    margin-bottom: 14px;
+}
+
+/* Resource Layer Buttons */
+
+.resource-layer-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 12px;
+    margin-top: 7px;
+    background: rgba(74, 222, 128, 0.035);
+    border: 1px solid transparent;
+    border-radius: 9px;
+    color: #a8bdae;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resource-layer-button:hover {
+    background: rgba(74, 222, 128, 0.1);
+    border-color: rgba(74, 222, 128, 0.18);
+    color: #e8f5ec;
+}
+
+.resource-layer-button.active {
+    background: rgba(74, 222, 128, 0.12);
+    border-color: rgba(74, 222, 128, 0.3);
+    color: #4ade80;
+}
+
+.layer-indicator {
+    color: #4ade80;
+}
+
+/* Map Legend */
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #a8bdae;
+    font-size: 12px;
+    margin-top: 13px;
+}
+
+.legend-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px currentColor;
+}
+
+.village-dot {
+    background: #4ade80;
+    color: #4ade80;
+}
+
+.well-dot {
+    background: #38bdf8;
+    color: #38bdf8;
+}
+
+.pond-dot {
+    background: #20d6bd;
+    color: #20d6bd;
+}
+
+.reservoir-dot {
+    background: #a78bfa;
+    color: #a78bfa;
+}
+
+.dam-dot {
+    background: #fbbf24;
+    color: #fbbf24;
+}
+
+/* Village Details */
+
+.location-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.09);
+    font-size: 11px;
+}
+
+.location-detail:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.location-detail span {
+    color: #82998a;
+}
+
+.location-detail strong {
+    color: #e8f5ec;
+    text-align: right;
+}
+
+.location-detail .prototype-status {
+    color: #fbbf24;
+}
+
+/* Data Sources */
+
+.source-card p {
+    color: #a8bdae;
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.source-card > span {
+    display: block;
+    color: #82998a;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+/* Entrance Animation */
+
+@keyframes resourcesFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Layout */
+
+@media (max-width: 900px) {
+    .resources-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-side-panel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .water-resources-page {
+        padding: 12px;
+    }
+
+    .resources-side-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .water-map-container {
+        height: 330px;
+    }
+
+    .resources-heading h2 {
+        font-size: 21px;
+    }
+}

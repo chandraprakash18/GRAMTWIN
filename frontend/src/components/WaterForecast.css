@@ -1,0 +1,635 @@
+
+/* GRAMTWIN 2.0 — Premium Emerald Theme */
+
+.water-forecast {
+    color: #E8F5EC;
+    animation: dashboardReveal 0.7s ease both;
+}
+
+.water-forecast-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    line-height: 1.2;
+    background: linear-gradient(
+        90deg,
+        #FFFFFF 0%,
+        #A7F3C0 45%,
+        #4ADE80 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+.water-forecast-subtitle {
+    color: #91AA99;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+@keyframes dashboardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Strong, readable text throughout the dashboard */
+
+.water-forecast h3 {
+    color: #E8F5EC !important;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+/* Historical and forecast dates */
+
+.water-forecast h3 {
+    text-shadow: 0 0 14px rgba(74, 222, 128, 0.12);
+}
+
+/* Section descriptions and labels */
+
+.water-forecast p {
+    color: #A7C4B0 !important;
+}
+
+/* Premium heading contrast */
+
+.water-forecast h2 {
+    color: #F0FFF4;
+}
+
+/* Highlight important numbers */
+
+.water-forecast h2:not(:first-child) {
+    text-shadow: 0 0 18px rgba(74, 222, 128, 0.10);
+}
+
+/* =================================
+   PREMIUM KPI CARD ANIMATIONS
+================================= */
+
+.water-kpi-card {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 450ms ease,
+        border-color 450ms ease,
+        background 450ms ease !important;
+    animation: kpiEntrance 800ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.water-kpi-card:nth-child(1) {
+    animation-delay: 100ms;
+}
+
+.water-kpi-card:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+.water-kpi-card:nth-child(3) {
+    animation-delay: 300ms;
+}
+
+.water-kpi-card:nth-child(4) {
+    animation-delay: 400ms;
+}
+
+/* Elegant hover lift */
+
+.water-kpi-card:hover {
+    transform: translateY(-8px) scale(1.025);
+    border-color: rgba(74, 222, 128, 0.55);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(74, 222, 128, 0.18),
+        inset 0 0 20px rgba(74, 222, 128, 0.04);
+}
+/* Subtle emerald light sweep */
+
+.water-kpi-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(134, 239, 172, 0.09),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 750ms ease;
+    pointer-events: none;
+}
+
+.water-kpi-card:hover::before {
+    left: 150%;
+}
+
+/* Entrance animation */
+
+@keyframes kpiEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PREMIUM DATE RANGE PANEL */
+
+.water-date-panel {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 400ms ease,
+        border-color 400ms ease,
+        box-shadow 400ms ease !important;
+    animation: panelReveal 900ms ease both;
+    animation-delay: 350ms;
+}
+
+.water-date-panel:hover {
+    transform: translateY(-5px);
+    border-color: rgba(74, 222, 128, 0.45) !important;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3),
+        0 0 22px rgba(74, 222, 128, 0.09);
+}
+
+@keyframes panelReveal {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PREMIUM CHART CONTAINERS */
+
+.water-chart-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 450ms ease,
+        border-color 450ms ease,
+        box-shadow 450ms ease !important;
+    animation: chartReveal 1s ease both;
+}
+
+.water-chart-card:nth-of-type(2) {
+    animation-delay: 200ms;
+}
+
+.water-chart-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(74, 222, 128, 0.4) !important;
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.3),
+        0 0 25px rgba(74, 222, 128, 0.08);
+}
+
+@keyframes chartReveal {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* AI FORECAST INSIGHTS PANEL */
+
+.water-insights-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation: insightsReveal 1s ease both;
+    animation-delay: 500ms;
+}
+
+.water-insights-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(74, 222, 128, 0.5) !important;
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(74, 222, 128, 0.12);
+}
+
+.water-insights-card h2 {
+    color: #86EFAC !important;
+    font-size: 27px;
+    font-weight: 800;
+    transition: text-shadow 350ms ease;
+}
+
+.water-insights-card:hover h2 {
+    text-shadow: 0 0 18px rgba(74, 222, 128, 0.25);
+}
+
+@keyframes insightsReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PREMIUM AMBIENT BACKGROUND */
+
+.water-forecast {
+    position: relative;
+    isolation: isolate;
+}
+
+.water-forecast::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: -8%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(
+        circle,
+        rgba(34, 197, 94, 0.10),
+        transparent 70%
+    );
+    filter: blur(45px);
+    z-index: -1;
+    pointer-events: none;
+    animation: emeraldGlow 8s ease-in-out infinite alternate;
+}
+
+.water-forecast::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+        circle,
+        rgba(32, 214, 189, 0.07),
+        transparent 70%
+    );
+    filter: blur(50px);
+    z-index: -1;
+    pointer-events: none;
+    animation: emeraldGlow 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes emeraldGlow {
+    from {
+        transform: translate(0, 0) scale(0.9);
+        opacity: 0.5;
+    }
+    to {
+        transform: translate(-20px, 25px) scale(1.15);
+        opacity: 1;
+    }
+}
+/* PREMIUM KPI NUMBER GLOW */
+
+.water-kpi-card h2 {
+    transition: text-shadow 0.5s ease, transform 0.5s ease;
+    animation: numberGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes numberGlow {
+    from {
+        text-shadow: 0 0 8px rgba(74, 222, 128, 0.12);
+        transform: translateY(0);
+    }
+
+    to {
+        text-shadow:
+            0 0 14px rgba(74, 222, 128, 0.35),
+            0 0 28px rgba(32, 214, 189, 0.15);
+        transform: translateY(-2px);
+    }
+}
+/* ANIMATED KPI BORDER GLOW */
+
+.water-kpi-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.water-kpi-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        120deg,
+        transparent 10%,
+        rgba(74, 222, 128, 0.55),
+        rgba(32, 214, 189, 0.45),
+        transparent 90%
+    );
+    background-size: 200% 200%;
+    animation: borderShimmer 5s linear infinite;
+    pointer-events: none;
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+@keyframes borderShimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+/* PREMIUM CHART SPOTLIGHT */
+
+.water-chart-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease,
+        border-color 0.45s ease;
+}
+
+.water-chart-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(32, 214, 189, 0.4);
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(32, 214, 189, 0.12);
+}
+/* PREMIUM LOADING SCREEN */
+
+.water-loading-screen {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(
+        circle at center,
+        rgba(20, 83, 45, 0.12),
+        transparent 60%
+    );
+    animation: loadingFadeIn 0.8s ease;
+}
+
+.loading-glow {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: rgba(34, 197, 94, 0.12);
+    filter: blur(90px);
+    border-radius: 50%;
+    animation: loadingPulse 3s ease-in-out infinite alternate;
+}
+
+.loading-ring {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid rgba(74, 222, 128, 0.12);
+    border-top: 3px solid #4ade80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loadingRotate 1.5s linear infinite;
+    box-shadow: 0 0 25px rgba(74, 222, 128, 0.15);
+    z-index: 1;
+}
+
+.loading-ring-inner {
+    animation: loadingCounterRotate 1.5s linear infinite;
+}
+
+.water-loading-screen h2 {
+    color: #e8f5ec;
+    font-size: 23px;
+    margin-top: 28px;
+    letter-spacing: 0.4px;
+    z-index: 1;
+}
+
+.water-loading-screen p {
+    color: #91aa99;
+    font-size: 13px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.loading-progress {
+    width: 220px;
+    height: 4px;
+    background: rgba(74, 222, 128, 0.12);
+    border-radius: 20px;
+    margin-top: 28px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.loading-progress-bar {
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, #16a34a, #4ade80, #20d6bd);
+    border-radius: 20px;
+    animation: loadingProgress 1.8s ease-in-out infinite;
+}
+
+.loading-status {
+    color: #4ade80;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+@keyframes loadingRotate {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes loadingCounterRotate {
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes loadingPulse {
+    from { transform: scale(0.8); opacity: 0.4; }
+    to { transform: scale(1.2); opacity: 0.8; }
+}
+
+@keyframes loadingProgress {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(350%); }
+}
+
+@keyframes loadingFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Premium Forecast Insight Cards */
+
+.insight-metric-card {
+    position: relative;
+    overflow: hidden;
+    padding: 22px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #14251a, #0c1710);
+    border: 1px solid rgba(74, 222, 128, 0.15);
+    transition: all 0.4s ease;
+}
+
+.insight-metric-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(74, 222, 128, 0.5);
+    box-shadow: 0 12px 30px rgba(34, 197, 94, 0.13);
+}
+
+.insight-label {
+    display: block;
+    color: #9ab5a2;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.insight-value {
+    font-size: 30px;
+    font-weight: 750;
+    color: #f0fff4;
+    margin: 0 0 12px;
+    text-shadow: 0 0 18px rgba(74, 222, 128, 0.18);
+}
+
+.insight-description {
+    color: #82998a;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.insight-accent {
+    height: 3px;
+    width: 45px;
+    border-radius: 10px;
+    margin-top: 18px;
+    transition: width 0.4s ease;
+}
+
+.insight-metric-card:hover .insight-accent {
+    width: 85px;
+}
+
+.average-accent {
+    background: linear-gradient(90deg, #20d6bd, #4ade80);
+}
+
+.maximum-accent {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.minimum-accent {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.insight-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(74, 222, 128, 0.045);
+    border: 1px solid rgba(74, 222, 128, 0.09);
+}
+
+.insight-footer p {
+    color: #91a999;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+}
+/* Forecast Insights Entrance Animation */
+
+.insight-metric-card {
+    animation: insightCardReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.insight-metric-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.insight-metric-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.insight-metric-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes insightCardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.96);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+/* Animated Glow for Insight Values */
+
+.insight-value {
+    animation: insightValueGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes insightValueGlow {
+    from {
+        text-shadow: 0 0 8px rgba(74, 222, 128, 0.12);
+    }
+
+    to {
+        text-shadow:
+            0 0 12px rgba(74, 222, 128, 0.35),
+            0 0 25px rgba(74, 222, 128, 0.12);
+    }
+}
