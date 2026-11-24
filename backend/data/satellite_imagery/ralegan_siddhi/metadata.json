@@ -1,0 +1,89 @@
+{
+  "village": {
+    "id": "ralegan_siddhi",
+    "name": "Ralegan Siddhi",
+    "district": "Ahilyanagar",
+    "state": "Maharashtra",
+    "center": [
+      18.9182,
+      74.3941
+    ],
+    "bbox": [
+      74.375,
+      18.902,
+      74.412,
+      18.935
+    ],
+    "total_area_ha": 982.4,
+    "elevation_m": 690,
+    "climate": "Semi-Arid",
+    "primary_crops": [
+      "Millet",
+      "Wheat",
+      "Sunflower",
+      "Pulses"
+    ],
+    "description": "Renowned for watershed management, percolation tanks, and community afforestation initiatives.",
+    "geojson_file": "ralegan_siddhi.geojson"
+  },
+  "t1": {
+    "village_id": "ralegan_siddhi",
+    "village_name": "Ralegan Siddhi",
+    "date": "2025-10-15",
+    "satellite": "Sentinel-2B MSI (L2A)",
+    "spatial_resolution": "10m/pixel",
+    "cloud_percentage": 0.4,
+    "coordinates": [
+      18.9182,
+      74.3941
+    ],
+    "bbox": [
+      74.375,
+      18.902,
+      74.412,
+      18.935
+    ],
+    "width": 384,
+    "height": 384,
+    "pixel_size_m": 10.0,
+    "total_area_ha": 1474.56,
+    "bands": [
+      "B2_Blue",
+      "B3_Green",
+      "B4_Red",
+      "B5_RedEdge",
+      "B8_NIR",
+      "B11_SWIR"
+    ]
+  },
+  "t2": {
+    "village_id": "ralegan_siddhi",
+    "village_name": "Ralegan Siddhi",
+    "date": "2026-10-18",
+    "satellite": "Sentinel-2A MSI (L2A)",
+    "spatial_resolution": "10m/pixel",
+    "cloud_percentage": 0.8,
+    "coordinates": [
+      18.9182,
+      74.3941
+    ],
+    "bbox": [
+      74.375,
+      18.902,
+      74.412,
+      18.935
+    ],
+    "width": 384,
+    "height": 384,
+    "pixel_size_m": 10.0,
+    "total_area_ha": 1474.56,
+    "bands": [
+      "B2_Blue",
+      "B3_Green",
+      "B4_Red",
+      "B5_RedEdge",
+      "B8_NIR",
+      "B11_SWIR"
+    ]
+  }
+}

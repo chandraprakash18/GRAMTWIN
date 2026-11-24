@@ -1,0 +1,58 @@
+[
+  {
+    "id": "hiware_bazar",
+    "name": "Hiware Bazar",
+    "district": "Ahilyanagar",
+    "state": "Maharashtra",
+    "center": [19.06861, 74.60111],
+    "bbox": [74.582, 19.052, 74.620, 19.085],
+    "total_area_ha": 976.8,
+    "elevation_m": 710,
+    "climate": "Semi-Arid",
+    "primary_crops": ["Jowar", "Bajra", "Onion", "Pomegranate", "Fodder"],
+    "description": "Pioneering Indian model village celebrated for watershed conservation, groundwater recharging, and organic farming.",
+    "geojson_file": "hiware_bazar.geojson"
+  },
+  {
+    "id": "ralegan_siddhi",
+    "name": "Ralegan Siddhi",
+    "district": "Ahilyanagar",
+    "state": "Maharashtra",
+    "center": [18.9182, 74.3941],
+    "bbox": [74.375, 18.902, 74.412, 18.935],
+    "total_area_ha": 982.4,
+    "elevation_m": 690,
+    "climate": "Semi-Arid",
+    "primary_crops": ["Millet", "Wheat", "Sunflower", "Pulses"],
+    "description": "Renowned for watershed management, percolation tanks, and community afforestation initiatives.",
+    "geojson_file": "ralegan_siddhi.geojson"
+  },
+  {
+    "id": "piplantri",
+    "name": "Piplantri",
+    "district": "Rajsamand",
+    "state": "Rajasthan",
+    "center": [25.0772, 73.8641],
+    "bbox": [73.845, 25.060, 73.882, 25.095],
+    "total_area_ha": 1150.0,
+    "elevation_m": 540,
+    "climate": "Arid to Semi-Arid",
+    "primary_crops": ["Aloe Vera", "Barley", "Mustard", "Neem"],
+    "description": "Eco-feminist oasis where 111 trees are planted for every girl child born, transforming barren hills into green forests.",
+    "geojson_file": "piplantri.geojson"
+  },
+  {
+    "id": "pothanikkad",
+    "name": "Pothanikkad",
+    "district": "Ernakulam",
+    "state": "Kerala",
+    "center": [10.0210, 76.6025],
+    "bbox": [76.585, 10.005, 76.620, 10.038],
+    "total_area_ha": 1850.5,
+    "elevation_m": 45,
+    "climate": "Tropical Wet",
+    "primary_crops": ["Rubber", "Coconut", "Pepper", "Paddy", "Nutmeg"],
+    "description": "Vibrant agro-forestry ecosystem with dense canopy cover, perennial water bodies, and high agricultural biodiversity.",
+    "geojson_file": "pothanikkad.geojson"
+  }
+]

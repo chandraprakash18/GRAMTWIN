@@ -1,4 +1,3 @@
-
 import {
     LayoutDashboard,
     Droplets,
@@ -9,7 +8,8 @@ import {
     Settings,
     ChevronRight,
     Leaf,
-    Activity
+    Activity,
+    Satellite
 } from "lucide-react";
 
 import "./Sidebar.css";
@@ -17,6 +17,11 @@ import "./Sidebar.css";
 function Sidebar({ activePage, onNavigate }) {
 
     const menuItems = [
+        {
+            name: "Satellite & Vegetation",
+            icon: Sprout,
+            section: "GENERAL"
+        },
         {
             name: "Overview",
             icon: LayoutDashboard,
@@ -33,11 +38,6 @@ function Sidebar({ activePage, onNavigate }) {
             section: "RESOURCES"
         },
         {
-            name: "Agriculture",
-            icon: Sprout,
-            section: "RESOURCES"
-        },
-        {
             name: "Energy",
             icon: Zap,
             section: "RESOURCES"
@@ -48,6 +48,17 @@ function Sidebar({ activePage, onNavigate }) {
             section: "RESOURCES"
         }
     ];
+
+    const handleItemClick = (name) => {
+        if (
+            name === "Satellite & Vegetation" ||
+            name === "Overview" ||
+            name === "Water Intelligence" ||
+            name === "Water Resources"
+        ) {
+            onNavigate(name);
+        }
+    };
 
     return (
         <aside className="sidebar">
@@ -63,7 +74,7 @@ function Sidebar({ activePage, onNavigate }) {
                     <h2>
                         GRAM<span>TWIN</span>
                     </h2>
-                    <p>DIGITAL TWIN PLATFORM</p>
+                    <p>AI GEOSPATIAL PLATFORM</p>
                 </div>
 
             </div>
@@ -73,7 +84,7 @@ function Sidebar({ activePage, onNavigate }) {
             {/* Navigation */}
             <nav className="sidebar-navigation">
 
-                <p className="menu-heading">GENERAL</p>
+                <p className="menu-heading">SATELLITE & DIGITAL TWIN</p>
 
                 {menuItems
                     .filter(item => item.section === "GENERAL")
@@ -86,10 +97,16 @@ function Sidebar({ activePage, onNavigate }) {
                                     activePage === item.name ? "active" : ""
                                 }`}
                                 key={item.name}
-                                onClick={() => onNavigate(item.name)}
+                                onClick={() => handleItemClick(item.name)}
                             >
                                 <Icon size={19} />
                                 <span>{item.name}</span>
+                                {activePage === item.name && (
+                                    <ChevronRight
+                                        size={16}
+                                        className="menu-arrow"
+                                    />
+                                )}
                             </div>
                         );
                     })}
@@ -109,14 +126,7 @@ function Sidebar({ activePage, onNavigate }) {
                                 className={`menu-item ${
                                     activePage === item.name ? "active" : ""
                                 }`}
-                                onClick={() => {
-                                    if (
-                                        item.name === "Water Intelligence" ||
-                                        item.name === "Water Resources"
-                                    ) {
-                                        onNavigate(item.name);
-                                    }
-                                }}
+                                onClick={() => handleItemClick(item.name)}
                             >
                                 <Icon size={19} />
                                 <span>{item.name}</span>
@@ -142,10 +152,10 @@ function Sidebar({ activePage, onNavigate }) {
                     </div>
 
                     <div>
-                        <h4>System Status</h4>
+                        <h4>AI Models Active</h4>
                         <p>
                             <span className="status-dot"></span>
-                            Prototype Active
+                            U-Net & Sentinel-2 Online
                         </p>
                     </div>
                 </div>

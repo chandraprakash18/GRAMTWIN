@@ -1,0 +1,96 @@
+{
+  "class_metrics": {
+    "Agricultural Land": {
+      "class_id": 1,
+      "iou": 0.9365,
+      "precision": 0.9933,
+      "recall": 0.9425,
+      "f1_score": 0.9672,
+      "total_pixels": 257456
+    },
+    "Trees / Forest": {
+      "class_id": 2,
+      "iou": 0.5953,
+      "precision": 0.6479,
+      "recall": 0.8799,
+      "f1_score": 0.7463,
+      "total_pixels": 16601
+    },
+    "Water Bodies": {
+      "class_id": 3,
+      "iou": 0.9591,
+      "precision": 0.9806,
+      "recall": 0.9777,
+      "f1_score": 0.9791,
+      "total_pixels": 31028
+    },
+    "Built-up Areas": {
+      "class_id": 4,
+      "iou": 0.9285,
+      "precision": 0.9515,
+      "recall": 0.9746,
+      "f1_score": 0.9629,
+      "total_pixels": 42722
+    },
+    "Bare Soil": {
+      "class_id": 5,
+      "iou": 0.9742,
+      "precision": 0.9805,
+      "recall": 0.9935,
+      "f1_score": 0.9869,
+      "total_pixels": 471393
+    }
+  },
+  "macro_avg": {
+    "precision": 0.9108,
+    "recall": 0.9536,
+    "f1_score": 0.9285,
+    "iou": 0.8787
+  },
+  "overall_pixel_accuracy": 0.9736,
+  "mean_iou": 0.8787,
+  "confusion_matrix": [
+    [
+      242655,
+      6672,
+      376,
+      581,
+      7172
+    ],
+    [
+      735,
+      14607,
+      118,
+      63,
+      1078
+    ],
+    [
+      127,
+      360,
+      30335,
+      10,
+      196
+    ],
+    [
+      144,
+      32,
+      24,
+      41635,
+      887
+    ],
+    [
+      641,
+      873,
+      83,
+      1466,
+      468330
+    ]
+  ],
+  "classes": [
+    "Agricultural Land",
+    "Trees / Forest",
+    "Water Bodies",
+    "Built-up Areas",
+    "Bare Soil"
+  ]
+}

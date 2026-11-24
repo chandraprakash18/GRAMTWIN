@@ -1,0 +1,90 @@
+{
+  "village": {
+    "id": "hiware_bazar",
+    "name": "Hiware Bazar",
+    "district": "Ahilyanagar",
+    "state": "Maharashtra",
+    "center": [
+      19.06861,
+      74.60111
+    ],
+    "bbox": [
+      74.582,
+      19.052,
+      74.62,
+      19.085
+    ],
+    "total_area_ha": 976.8,
+    "elevation_m": 710,
+    "climate": "Semi-Arid",
+    "primary_crops": [
+      "Jowar",
+      "Bajra",
+      "Onion",
+      "Pomegranate",
+      "Fodder"
+    ],
+    "description": "Pioneering Indian model village celebrated for watershed conservation, groundwater recharging, and organic farming.",
+    "geojson_file": "hiware_bazar.geojson"
+  },
+  "t1": {
+    "village_id": "hiware_bazar",
+    "village_name": "Hiware Bazar",
+    "date": "2025-10-15",
+    "satellite": "Sentinel-2B MSI (L2A)",
+    "spatial_resolution": "10m/pixel",
+    "cloud_percentage": 0.4,
+    "coordinates": [
+      19.06861,
+      74.60111
+    ],
+    "bbox": [
+      74.582,
+      19.052,
+      74.62,
+      19.085
+    ],
+    "width": 384,
+    "height": 384,
+    "pixel_size_m": 10.0,
+    "total_area_ha": 1474.56,
+    "bands": [
+      "B2_Blue",
+      "B3_Green",
+      "B4_Red",
+      "B5_RedEdge",
+      "B8_NIR",
+      "B11_SWIR"
+    ]
+  },
+  "t2": {
+    "village_id": "hiware_bazar",
+    "village_name": "Hiware Bazar",
+    "date": "2026-10-18",
+    "satellite": "Sentinel-2A MSI (L2A)",
+    "spatial_resolution": "10m/pixel",
+    "cloud_percentage": 0.8,
+    "coordinates": [
+      19.06861,
+      74.60111
+    ],
+    "bbox": [
+      74.582,
+      19.052,
+      74.62,
+      19.085
+    ],
+    "width": 384,
+    "height": 384,
+    "pixel_size_m": 10.0,
+    "total_area_ha": 1474.56,
+    "bands": [
+      "B2_Blue",
+      "B3_Green",
+      "B4_Red",
+      "B5_RedEdge",
+      "B8_NIR",
+      "B11_SWIR"
+    ]
+  }
+}
