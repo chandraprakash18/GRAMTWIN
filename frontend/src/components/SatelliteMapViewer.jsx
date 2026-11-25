@@ -198,10 +198,18 @@ function SatelliteMapViewer({
                     className="leaflet-container"
                     key={`${village?.id}-${center[0]}-${center[1]}`}
                 >
-                    {/* Dark CartoDB Matter / OpenStreetMap tiles */}
+                    {/* Esri World Imagery - Free satellite tiles, no API key required */}
                     <TileLayer
-                        attribution='&copy; <a href="https://carto.com/">CARTO</a> &copy; OpenStreetMap'
-                        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                        attribution='Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+                        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+                        maxZoom={19}
+                    />
+                    {/* Esri Reference Labels overlay */}
+                    <TileLayer
+                        attribution=""
+                        url="https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}"
+                        maxZoom={19}
+                        opacity={0.7}
                     />
 
                     <ZoomControl position="bottomright" />
